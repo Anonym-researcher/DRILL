@@ -1,0 +1,82 @@
+Note that
+-> OCEL does not report F-measure.
+-> ELTL does not report explored expressions.
+
+
+Knowledge Base: family-benchmark_rich_background
+Number of concepts: 20
+Number of individuals: 202
+Number of properties: 4
+Number of data properties: 0
+Number of object properties: 4
+
+########################################################################################################################
+Number of problems 74 on Knowledge Base:family-benchmark_rich_background
+DRILL is loaded.
+Number of parameters:  1282785
+KG preprocessing took : 0.11104512214660645
+########################################################################################################################
+##### RESULTS on 74 number of learning problems#####
+DrillAverage     F-measure:(avg. 1.00 | std. 0.00)      Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. 27.85 | std. 31.51)                Runtime:(avg.0.06 | std.0.03)
+ocel     F-measure:(avg. -0.01 | std. 0.00)     Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. 2512.43 | std. 528.57)             Runtime:(avg.6.47 | std.0.59)
+celoe    F-measure:(avg. 1.00 | std. 0.00)      Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. 14.24 | std. 8.50)         Runtime:(avg.3.36 | std.0.25)
+eltl     F-measure:(avg. 1.00 | std. 0.00)      Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. -1.00 | std. 0.00)         Runtime:(avg.3.44 | std.0.32)
+
+########################################################################################################################
+Start Testing on Carcinogenesis on automatically generated learning problems
+########################################################################################################################
+Knowledge Base: carcinogenesis
+Number of concepts: 144
+Number of individuals: 22372
+Number of properties: 19
+Number of data properties: 15
+Number of object properties: 4
+########################################################################################################################
+DRILL is loaded.
+Number of parameters:  321985
+KG preprocessing took : 2.0905189514160156
+DrillAverage starts on 100 number of problems. Max Runtime per problem is set to 3 seconds.
+##### RESULTS on 100 number of learning problems#####
+DrillAverage     F-measure:(avg. 1.00 | std. 0.00)      Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. 72.60 | std. 40.49)                Runtime:(avg.0.08 | std.0.02)
+ocel     F-measure:(avg. -0.01 | std. 0.00)     Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. 5611.32 | std. 4360.87)            Runtime:(avg.21.99 | std.2.52)
+celoe    F-measure:(avg. 1.00 | std. 0.00)      Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. 16.70 | std. 8.09)         Runtime:(avg.18.11 | std.2.35)
+eltl     F-measure:(avg. 1.00 | std. 0.01)      Accuracy:(avg. 1.00 | std. 0.01)                NumClassTested:(avg. -1.00 | std. 0.00)         Runtime:(avg.24.21 | std.4.00)
+
+########################################################################################################################
+Knowledge Base: mutagenesis
+Number of concepts: 88
+Number of individuals: 14145
+Number of properties: 11
+Number of data properties: 6
+Number of object properties: 5
+########################################################################################################################
+Number of problems 100 on Knowledge Base:mutagenesis
+DRILL is loaded.
+Number of parameters:  1282785
+KG preprocessing took : 2.050614833831787
+....
+##### RESULTS on 100 number of learning problems#####
+DrillAverage     F-measure:(avg. 1.00 | std. 0.00)      Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. 203.99 | std. 455.38)              Runtime:(avg.0.41 | std.0.83)
+ocel     F-measure:(avg. -0.01 | std. 0.00)     Accuracy:(avg. 0.98 | std. 0.14)                NumClassTested:(avg. 3372.38 | std. 1399.02)            Runtime:(avg.17.53 | std.2.37)
+celoe    F-measure:(avg. 1.00 | std. 0.01)      Accuracy:(avg. 1.00 | std. 0.01)                NumClassTested:(avg. 125.47 | std. 421.64)              Runtime:(avg.11.74 | std.1.11)
+eltl     F-measure:(avg. 0.97 | std. 0.09)      Accuracy:(avg. 0.96 | std. 0.12)                NumClassTested:(avg. -1.00 | std. 0.00)         Runtime:(avg.11.90 | std.0.87)
+....
+Start Testing on Biopax on automatically generated learning problems
+##########
+Knowledge Base: biopax
+Number of concepts: 42
+Number of individuals: 323
+Number of properties: 71
+Number of data properties: 37
+Number of object properties: 33
+##########
+Number of problems 96 on Knowledge Base:biopax
+DRILL is loaded.
+Number of parameters:  1282785
+KG preprocessing took : 0.1912975311279297
+
+##### RESULTS on 96 number of learning problems#####
+DrillAverage     F-measure:(avg. 1.00 | std. 0.00)      Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. 24.22 | std. 47.12)                Runtime:(avg.0.04 | std.0.03)
+ocel     F-measure:(avg. -0.01 | std. 0.00)     Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. 3432.81 | std. 2220.92)            Runtime:(avg.7.85 | std.0.54)
+celoe    F-measure:(avg. 1.00 | std. 0.03)      Accuracy:(avg. 0.99 | std. 0.04)                NumClassTested:(avg. 43.83 | std. 186.36)               Runtime:(avg.4.59 | std.0.58)
+eltl     F-measure:(avg. 0.99 | std. 0.06)      Accuracy:(avg. 0.98 | std. 0.09)                NumClassTested:(avg. -1.00 | std. 0.00)         Runtime:(avg.4.02 | std.0.15)

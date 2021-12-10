@@ -1,0 +1,1089 @@
+Reproduce Experiments
+Start Testing on Family on learning problems obtained from DL-learner
+* Owlready2 * Warning: optimized Cython parser module 'owlready2_optimized' is not available, defaulting to slower Python implementation
+Iterate over classes
+##########
+Knowledge Base: family-benchmark_rich_background
+Number of concepts: 20
+Number of individuals: 202
+Number of properties: 4
+Number of data properties: 0
+Number of object properties: 4
+##########
+Number of problems 18 on Knowledge Base:family-benchmark_rich_background
+DRILL is loaded.
+Number of parameters:  1282785
+KG preprocessing took : 0.1634507179260254
+DrillAverage starts on 18 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => Grandmother
+{'Target': 'Grandmother', 'Prediction': 'Grandmother', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 2, 'Runtime': 0.15991735458374023}
+Target => Grandgrandmother
+{'Target': 'Grandgrandmother', 'Prediction': 'Grandmother', 'F-measure': 0.94444, 'Accuracy': 0.9411764705882353, 'NumClassTested': 5823, 'Runtime': 3.2425553798675537}
+Target => Aunt
+{'Target': 'Aunt', 'Prediction': 'Female', 'F-measure': 0.80392, 'Accuracy': 0.7560975609756098, 'NumClassTested': 8189, 'Runtime': 3.7203330993652344}
+Target => Son
+{'Target': 'Son', 'Prediction': 'Son', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 19, 'Runtime': 0.05446934700012207}
+Target => Cousin
+{'Target': 'Cousin', 'Prediction': '(Grandchild ⊔ ¬Grandparent)', 'F-measure': 0.72626, 'Accuracy': 0.6549295774647887, 'NumClassTested': 5802, 'Runtime': 3.2719690799713135}
+Target => Sister
+{'Target': 'Sister', 'Prediction': 'Sister', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.05222058296203613}
+Target => Grandgrandson
+{'Target': 'Grandgrandson', 'Prediction': 'Grandson', 'F-measure': 0.92308, 'Accuracy': 0.9166666666666666, 'NumClassTested': 4077, 'Runtime': 3.0592098236083984}
+Target => Daughter
+{'Target': 'Daughter', 'Prediction': 'Daughter', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 17, 'Runtime': 0.07974481582641602}
+Target => Granddaughter
+{'Target': 'Granddaughter', 'Prediction': 'Granddaughter', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.06726312637329102}
+Target => Uncle
+{'Target': 'Uncle', 'Prediction': 'Male', 'F-measure': 0.88372, 'Accuracy': 0.868421052631579, 'NumClassTested': 7730, 'Runtime': 3.0128092765808105}
+Target => PersonWithASibling
+{'Target': 'PersonWithASibling', 'Prediction': 'PersonWithASibling', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 5, 'Runtime': 0.041564226150512695}
+Target => Grandfather
+{'Target': 'Grandfather', 'Prediction': 'Grandfather', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 8, 'Runtime': 0.03294205665588379}
+Target => Grandgranddaughter
+{'Target': 'Grandgranddaughter', 'Prediction': 'Granddaughter', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.03607535362243652}
+Target => Grandgrandfather
+{'Target': 'Grandgrandfather', 'Prediction': 'Grandfather', 'F-measure': 0.94444, 'Accuracy': 0.9411764705882353, 'NumClassTested': 5178, 'Runtime': 3.1582694053649902}
+Target => Father
+{'Target': 'Father', 'Prediction': 'Father', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 3, 'Runtime': 0.03555035591125488}
+Target => Brother
+{'Target': 'Brother', 'Prediction': 'Brother', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 16, 'Runtime': 0.037699222564697266}
+Target => Mother
+{'Target': 'Mother', 'Prediction': 'Mother', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 10, 'Runtime': 0.03441977500915527}
+Target => Grandson
+{'Target': 'Grandson', 'Prediction': 'Grandson', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 15, 'Runtime': 0.03850722312927246}
+##################
+ocel starts on 18 number of problems. Max Runtime per problem is set to 3 seconds.
+#################
+#######ocel##########
+#################
+no appropriate solutions found (try increasing the noisePercentage parameter to what was reported as most accurate expression found above)
+Algorithm stopped (2449 descriptions tested).
+#################
+#######ocel##########
+#################
+###############
+Target => Grandmother
+{'Prediction': 'Grandmother', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1804, 'Runtime': 7.501}
+Target => Grandgrandmother
+{'Prediction': 'Grandmother ⊓ (∃ hasChild.Grandparent)', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2860, 'Runtime': 5.971}
+Target => Aunt
+{'Prediction': 'Female ⊓ (((¬Grandchild) ⊓ (∃ married.(PersonWithASibling ⊓ (∃ hasSibling.Parent)))) ⊔ (∃ hasSibling.Parent))', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 3944, 'Runtime': 5.999}
+Target => Son
+{'Prediction': 'Son', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2093, 'Runtime': 6.164}
+Target => Cousin
+{'Prediction': '(Grandchild ⊓ (∃ hasParent.(PersonWithASibling ⊓ (∃ hasSibling.Parent)))) ⊔ (∃ married.(Grandchild ⊓ (∃ hasParent.(PersonWithASibling ⊓ (∃ hasSibling.Parent)))))', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2446, 'Runtime': 6.235}
+Target => Sister
+{'Prediction': 'Sister', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2386, 'Runtime': 6.184}
+Target => Grandgrandson
+{'Prediction': 'Grandson ⊓ (∃ hasParent.Grandchild)', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 4505, 'Runtime': 6.01}
+Target => Daughter
+{'Prediction': 'Daughter', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 4075, 'Runtime': 6.344}
+Target => Granddaughter
+{'Prediction': 'Granddaughter', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2029, 'Runtime': 6.059}
+Target => Uncle
+{'Model': 'ocel', 'Prediction': None, 'Accuracy': -0.01, 'F-measure': -0.01, 'NumClassTested': 2449, 'Runtime': 6.624}
+Target => PersonWithASibling
+{'Prediction': 'PersonWithASibling', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2851, 'Runtime': 6.35}
+Target => Grandfather
+{'Prediction': 'Grandfather', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1618, 'Runtime': 6.225}
+Target => Grandgranddaughter
+{'Prediction': 'Granddaughter', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2584, 'Runtime': 6.09}
+Target => Grandgrandfather
+{'Prediction': 'Grandfather ⊓ (∃ hasChild.Grandparent)', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2380, 'Runtime': 6.382}
+Target => Father
+{'Prediction': 'Father', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1934, 'Runtime': 6.59}
+Target => Brother
+{'Prediction': 'Brother', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2213, 'Runtime': 6.418}
+Target => Mother
+{'Prediction': 'Mother', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2105, 'Runtime': 6.706}
+Target => Grandson
+{'Prediction': 'Grandson', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1870, 'Runtime': 7.433}
+##################
+celoe starts on 18 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => Grandmother
+{'Prediction': 'Grandmother', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 4.693}
+Target => Grandgrandmother
+{'Prediction': 'Female ⊓ (∃ hasChild.Grandparent)', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 190, 'Runtime': 4.595}
+Target => Aunt
+{'Prediction': 'Sister ⊔ (Female ⊓ (¬Granddaughter))', 'Accuracy': 0.7927, 'F-measure': 0.8283, 'NumClassTested': 3169, 'Runtime': 6.239}
+Target => Son
+{'Prediction': 'Son', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 12, 'Runtime': 3.18}
+Target => Cousin
+{'Prediction': 'Grandchild ⊔ (∀ married.Grandchild)', 'Accuracy': 0.7394, 'F-measure': 0.7933, 'NumClassTested': 2730, 'Runtime': 6.169}
+Target => Sister
+{'Prediction': 'Sister', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 9, 'Runtime': 3.373}
+Target => Grandgrandson
+{'Prediction': 'Male ⊓ (∃ hasParent.Grandchild)', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 188, 'Runtime': 3.795}
+Target => Daughter
+{'Prediction': 'Daughter', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 8, 'Runtime': 3.465}
+Target => Granddaughter
+{'Prediction': 'Granddaughter', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 9, 'Runtime': 3.678}
+Target => Uncle
+{'Prediction': 'Brother ⊔ (Male ⊓ (¬Son))', 'Accuracy': 0.8947, 'F-measure': 0.9048, 'NumClassTested': 3945, 'Runtime': 6.032}
+Target => PersonWithASibling
+{'Prediction': 'PersonWithASibling', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 7, 'Runtime': 3.435}
+Target => Grandfather
+{'Prediction': 'Grandfather', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 3.669}
+Target => Grandgranddaughter
+{'Prediction': 'Granddaughter', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 3.73}
+Target => Grandgrandfather
+{'Prediction': 'Male ⊓ (∃ hasChild.Grandparent)', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 190, 'Runtime': 3.451}
+Target => Father
+{'Prediction': 'Father', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 9, 'Runtime': 3.445}
+Target => Brother
+{'Prediction': 'Brother', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 8, 'Runtime': 3.259}
+Target => Mother
+{'Prediction': 'Mother', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 3.214}
+Target => Grandson
+{'Prediction': 'Grandson', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 3.104}
+##################
+eltl starts on 18 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => Grandmother
+{'Prediction': 'Grandmother', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.138}
+Target => Grandgrandmother
+{'Prediction': 'Grandmother ⊓ (∃ hasChild.(∃ hasChild.Parent))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 5.535}
+Target => Aunt
+{'Prediction': 'Female', 'Accuracy': 0.7561, 'F-measure': 0.8039000000000001, 'NumClassTested': -1, 'Runtime': 3.748}
+Target => Son
+{'Prediction': 'Child ⊓ Male', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.241}
+Target => Cousin
+{'Prediction': '⊤', 'Accuracy': 0.5, 'F-measure': 0.6667000000000001, 'NumClassTested': -1, 'Runtime': 3.493}
+Target => Sister
+{'Prediction': 'Female ⊓ (∃ hasSibling.⊤)', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.635}
+Target => Grandgrandson
+{'Prediction': 'Grandson ⊓ (∃ hasParent.(∃ hasParent.Child))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.412}
+Target => Daughter
+{'Prediction': 'Child ⊓ Female', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.253}
+Target => Granddaughter
+{'Prediction': 'Granddaughter', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.178}
+Target => Uncle
+{'Prediction': 'Male', 'Accuracy': 0.8684000000000001, 'F-measure': 0.8837, 'NumClassTested': -1, 'Runtime': 3.207}
+Target => PersonWithASibling
+{'Prediction': 'PersonWithASibling', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.368}
+Target => Grandfather
+{'Prediction': 'Grandfather', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.606}
+Target => Grandgranddaughter
+{'Prediction': 'Female ⊓ (∃ hasParent.(∃ hasParent.⊤))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.334}
+Target => Grandgrandfather
+{'Prediction': 'Grandfather ⊓ (∃ hasChild.(∃ hasChild.Parent))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.158}
+Target => Father
+{'Prediction': 'Male ⊓ Parent', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.269}
+Target => Brother
+{'Prediction': 'Male ⊓ (∃ hasSibling.⊤)', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.201}
+Target => Mother
+{'Prediction': 'Female ⊓ (∃ hasChild.⊤)', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.653}
+Target => Grandson
+{'Prediction': 'Grandson', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.474}
+##################
+
+##### RESULTS on 18 number of learning problems#####
+DrillAverage     F-measure:(avg. 0.96 | std. 0.08)      Accuracy:(avg. 0.95 | std. 0.10)                NumClassTested:(avg. 2052.00 | std. 3000.24)            Runtime:(avg.1.12 | std.1.51)
+ocel     F-measure:(avg. -0.01 | std. 0.00)     Accuracy:(avg. 0.94 | std. 0.23)                NumClassTested:(avg. 2563.67 | std. 796.21)             Runtime:(avg.6.40 | std.0.43)
+celoe    F-measure:(avg. 0.97 | std. 0.06)      Accuracy:(avg. 0.97 | std. 0.08)                NumClassTested:(avg. 584.78 | std. 1225.01)             Runtime:(avg.4.03 | std.1.03)
+eltl     F-measure:(avg. 0.96 | std. 0.09)      Accuracy:(avg. 0.95 | std. 0.13)                NumClassTested:(avg. -1.00 | std. 0.00)         Runtime:(avg.3.55 | std.0.54)
+Start Testing on Carcinogenesis on learning problems obtained from DL-learner
+* Owlready2 * Warning: optimized Cython parser module 'owlready2_optimized' is not available, defaulting to slower Python implementation
+Iterate over classes
+##########
+Knowledge Base: carcinogenesis
+Number of concepts: 144
+Number of individuals: 22372
+Number of properties: 19
+Number of data properties: 15
+Number of object properties: 4
+##########
+Number of problems 1 on Knowledge Base:carcinogenesis
+DRILL is loaded.
+Number of parameters:  321985
+KG preprocessing took : 2.114074230194092
+DrillAverage starts on 1 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => NOTKNOWN
+{'Target': 'NOTKNOWN', 'Prediction': '(∃hasStructure.⊤)', 'F-measure': 0.71429, 'Accuracy': 0.5643564356435643, 'NumClassTested': 305, 'Runtime': 4.783073902130127}
+##################
+ocel starts on 1 number of problems. Max Runtime per problem is set to 3 seconds.
+#################
+#######ocel##########
+#################
+no appropriate solutions found (try increasing the noisePercentage parameter to what was reported as most accurate expression found above)
+Algorithm stopped (802 descriptions tested).
+#################
+#######ocel##########
+#################
+###############
+Target => NOTKNOWN
+{'Model': 'ocel', 'Prediction': None, 'Accuracy': -0.01, 'F-measure': -0.01, 'NumClassTested': 802, 'Runtime': 19.965}
+##################
+celoe starts on 1 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => NOTKNOWN
+{'Prediction': '∃ hasStructure.Structure', 'Accuracy': 0.5644, 'F-measure': 0.7143, 'NumClassTested': 230, 'Runtime': 29.081}
+##################
+eltl starts on 1 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => NOTKNOWN
+{'Prediction': '(∃ hasAtom.Hydrogen) ⊓ (∃ hasStructure.Structure)', 'Accuracy': 0.5743, 'F-measure': 0.7190000000000001, 'NumClassTested': -1, 'Runtime': 19.057}
+##################
+
+##### RESULTS on 1 number of learning problems#####
+DrillAverage     F-measure:(avg. 0.71 | std. 0.00)      Accuracy:(avg. 0.56 | std. 0.00)                NumClassTested:(avg. 305.00 | std. 0.00)                Runtime:(avg.4.78 | std.0.00)
+ocel     F-measure:(avg. -0.01 | std. 0.00)     Accuracy:(avg. -0.01 | std. 0.00)               NumClassTested:(avg. 802.00 | std. 0.00)                Runtime:(avg.19.96 | std.0.00)
+celoe    F-measure:(avg. 0.71 | std. 0.00)      Accuracy:(avg. 0.56 | std. 0.00)                NumClassTested:(avg. 230.00 | std. 0.00)                Runtime:(avg.29.08 | std.0.00)
+eltl     F-measure:(avg. 0.72 | std. 0.00)      Accuracy:(avg. 0.57 | std. 0.00)                NumClassTested:(avg. -1.00 | std. 0.00)         Runtime:(avg.19.06 | std.0.00)
+Start Testing on Mutagenesis on learning problems obtained from DL-learner
+* Owlready2 * Warning: optimized Cython parser module 'owlready2_optimized' is not available, defaulting to slower Python implementation
+Iterate over classes
+##########
+Knowledge Base: mutagenesis
+Number of concepts: 88
+Number of individuals: 14145
+Number of properties: 11
+Number of data properties: 6
+Number of object properties: 5
+##########
+Number of problems 1 on Knowledge Base:mutagenesis
+DRILL is loaded.
+Number of parameters:  1282785
+KG preprocessing took : 1.6256914138793945
+DrillAverage starts on 1 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => NotKnown
+{'Target': 'NotKnown', 'Prediction': '⊤', 'F-measure': 0.70423, 'Accuracy': 0.5434782608695652, 'NumClassTested': 3943, 'Runtime': 3.0407276153564453}
+##################
+ocel starts on 1 number of problems. Max Runtime per problem is set to 3 seconds.
+#################
+#######ocel##########
+#################
+no appropriate solutions found (try increasing the noisePercentage parameter to what was reported as most accurate expression found above)
+Algorithm stopped (4023 descriptions tested).
+#################
+#######ocel##########
+#################
+###############
+Target => NotKnown
+{'Model': 'ocel', 'Prediction': None, 'Accuracy': -0.01, 'F-measure': -0.01, 'NumClassTested': 4023, 'Runtime': 13.788}
+##################
+celoe starts on 1 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => NotKnown
+{'Prediction': '⊤', 'Accuracy': 0.5435, 'F-measure': 0.7042, 'NumClassTested': 135, 'Runtime': 13.896}
+##################
+eltl starts on 1 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => NotKnown
+{'Prediction': '⊤', 'Accuracy': 0.5435, 'F-measure': 0.7042, 'NumClassTested': -1, 'Runtime': 13.646}
+##################
+
+##### RESULTS on 1 number of learning problems#####
+DrillAverage     F-measure:(avg. 0.70 | std. 0.00)      Accuracy:(avg. 0.54 | std. 0.00)                NumClassTested:(avg. 3943.00 | std. 0.00)               Runtime:(avg.3.04 | std.0.00)
+ocel     F-measure:(avg. -0.01 | std. 0.00)     Accuracy:(avg. -0.01 | std. 0.00)               NumClassTested:(avg. 4023.00 | std. 0.00)               Runtime:(avg.13.79 | std.0.00)
+celoe    F-measure:(avg. 0.70 | std. 0.00)      Accuracy:(avg. 0.54 | std. 0.00)                NumClassTested:(avg. 135.00 | std. 0.00)                Runtime:(avg.13.90 | std.0.00)
+eltl     F-measure:(avg. 0.70 | std. 0.00)      Accuracy:(avg. 0.54 | std. 0.00)                NumClassTested:(avg. -1.00 | std. 0.00)         Runtime:(avg.13.65 | std.0.00)
+(drill_env) demir@demir:~/Desktop/DRILLESWC$ /bin/bash /home/demir/Desktop/DRILLESWC/reproduce_large_benchmark.sh
+Reproduce Our Experiments
+Start Testing on Biopax on automatically generated learning problems
+* Owlready2 * Warning: optimized Cython parser module 'owlready2_optimized' is not available, defaulting to slower Python implementation
+* Owlready2 * WARNING: ObjectProperty http://www.biopax.org/examples/glycolysis#DELTA-G belongs to more than one entity types: [owl.AnnotationProperty, owl.ObjectProperty]; I'm trying to fix it...
+Iterate over classes
+##########
+Knowledge Base: biopax
+Number of concepts: 42
+Number of individuals: 323
+Number of properties: 71
+Number of data properties: 37
+Number of object properties: 33
+##########
+Number of problems 96 on Knowledge Base:biopax
+DRILL is loaded.
+Number of parameters:  1282785
+KG preprocessing took : 0.1954185962677002
+DrillAverage starts on 96 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => ((complex ⊓ (∀TITLE.Thing)) ⊔ (sequenceInterval ⊓ (∃SEQUENCE-INTERVAL-END.Thing)))
+{'Target': '((complex ⊓ (∀TITLE.Thing)) ⊔ (sequenceInterval ⊓ (∃SEQUENCE-INTERVAL-END.Thing)))', 'Prediction': 'complex', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 14, 'Runtime': 0.22923612594604492}
+Target => ((∀SPONTANEOUS.Thing) ⊓ (relationshipXref ⊓ (∀K-PRIME.Thing)))
+{'Target': '((∀SPONTANEOUS.Thing) ⊓ (relationshipXref ⊓ (∀K-PRIME.Thing)))', 'Prediction': 'relationshipXref', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 19, 'Runtime': 0.051621437072753906}
+Target => (pathwayStep ⊓ (∀EXPERIMENTAL-FORM.Thing))
+{'Target': '(pathwayStep ⊓ (∀EXPERIMENTAL-FORM.Thing))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.052544593811035156}
+Target => ((∀SPONTANEOUS.Thing) ⊓ (relationshipXref ⊓ (∀LEFT.Thing)))
+{'Target': '((∀SPONTANEOUS.Thing) ⊓ (relationshipXref ⊓ (∀LEFT.Thing)))', 'Prediction': 'relationshipXref', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 19, 'Runtime': 0.034169673919677734}
+Target => ((pathwayStep ⊓ (∀SPONTANEOUS.Thing)) ⊔ (rna ⊓ (∀AVAILABILITY.Thing)))
+{'Target': '((pathwayStep ⊓ (∀SPONTANEOUS.Thing)) ⊔ (rna ⊓ (∀AVAILABILITY.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.0335087776184082}
+Target => ((∀SOURCE.Thing) ⊓ (pathwayStep ⊓ (∀FEATURE-TYPE.Thing)))
+{'Target': '((∀SOURCE.Thing) ⊓ (pathwayStep ⊓ (∀FEATURE-TYPE.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.032932281494140625}
+Target => (complex ⊓ (∀DELTA-H.Thing))
+{'Target': '(complex ⊓ (∀DELTA-H.Thing))', 'Prediction': 'complex', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 14, 'Runtime': 0.03209972381591797}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀SEQUENCE-INTERVAL-END.Thing)))
+{'Target': '(transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀SEQUENCE-INTERVAL-END.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.02754950523376465}
+Target => (pathwayStep ⊔ sequenceInterval)
+{'Target': '(pathwayStep ⊔ sequenceInterval)', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.02853560447692871}
+Target => (control ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Target': '(control ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.03186774253845215}
+Target => (protein ⊓ (∀LEFT.Thing))
+{'Target': '(protein ⊓ (∀LEFT.Thing))', 'Prediction': 'protein', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 22, 'Runtime': 0.03305983543395996}
+Target => (pathwayStep ⊔ (pathway ⊓ (∀STRUCTURE-DATA.Thing)))
+{'Target': '(pathwayStep ⊔ (pathway ⊓ (∀STRUCTURE-DATA.Thing)))', 'Prediction': '(pathway ⊔ pathwayStep)', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 798, 'Runtime': 0.37672924995422363}
+Target => (physicalInteraction ⊓ (catalysis ⊓ (∀LEFT.Thing)))
+{'Target': '(physicalInteraction ⊓ (catalysis ⊓ (∀LEFT.Thing)))', 'Prediction': 'physicalInteraction', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 11, 'Runtime': 0.08216214179992676}
+Target => ((complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)) ⊔ (pathwayStep ⊓ (∀SPONTANEOUS.Thing)))
+{'Target': '((complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)) ⊔ (pathwayStep ⊓ (∀SPONTANEOUS.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.06890678405761719}
+Target => (sequenceParticipant ⊔ (pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Target': '(sequenceParticipant ⊔ (pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.045264482498168945}
+Target => ((∀PMG.Thing) ⊓ (complex ⊓ (∀STRUCTURE-FORMAT.Thing)))
+{'Target': '((∀PMG.Thing) ⊓ (complex ⊓ (∀STRUCTURE-FORMAT.Thing)))', 'Prediction': 'complex', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 14, 'Runtime': 0.03598499298095703}
+Target => ((pathwayStep ⊓ (∀SPONTANEOUS.Thing)) ⊔ (rna ⊓ (∀PH.Thing)))
+{'Target': '((pathwayStep ⊓ (∀SPONTANEOUS.Thing)) ⊔ (rna ⊓ (∀PH.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.032134294509887695}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀PARTICIPANTS.Thing)))
+{'Target': '(experimentalForm ⊔ (catalysis ⊓ (∀PARTICIPANTS.Thing)))', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.031010866165161133}
+Target => ((catalysis ⊓ (∀CONTROLLED.Thing)) ⊔ (experimentalForm ⊓ (∀SEQUENCE-INTERVAL-BEGIN.Thing)))
+{'Target': '((catalysis ⊓ (∀CONTROLLED.Thing)) ⊔ (experimentalForm ⊓ (∀SEQUENCE-INTERVAL-BEGIN.Thing)))', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.053252458572387695}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DB.Thing)))
+{'Target': '(transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DB.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.1307697296142578}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.interaction) ⊓ (protein ⊓ (∀EVIDENCE.Thing)))
+{'Target': '((∀SEQUENCE-INTERVAL-BEGIN.interaction) ⊓ (protein ⊓ (∀EVIDENCE.Thing)))', 'Prediction': 'protein', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 22, 'Runtime': 0.05418539047241211}
+Target => (relationshipXref ⊓ (∀EXPERIMENTAL-FORM-TYPE.Thing))
+{'Target': '(relationshipXref ⊓ (∀EXPERIMENTAL-FORM-TYPE.Thing))', 'Prediction': 'relationshipXref', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 19, 'Runtime': 0.07828783988952637}
+Target => ((complex ⊓ (∀TITLE.Thing)) ⊔ (sequenceInterval ⊓ (∃URL.Thing)))
+{'Target': '((complex ⊓ (∀TITLE.Thing)) ⊔ (sequenceInterval ⊓ (∃URL.Thing)))', 'Prediction': 'complex', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 14, 'Runtime': 0.0810704231262207}
+Target => (pathwayStep ⊓ (∀SOURCE.Thing))
+{'Target': '(pathwayStep ⊓ (∀SOURCE.Thing))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.09932112693786621}
+Target => ((pathwayStep ⊓ (∀ORGANISM.Thing)) ⊔ (transport ⊓ (∀ID-VERSION.Thing)))
+{'Target': '((pathwayStep ⊓ (∀ORGANISM.Thing)) ⊔ (transport ⊓ (∀ID-VERSION.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.10405158996582031}
+Target => ((dna ⊓ (∃DELTA-H.Thing)) ⊔ (pathwayStep ⊓ (∀TEMPERATURE.Thing)))
+{'Target': '((dna ⊓ (∃DELTA-H.Thing)) ⊔ (pathwayStep ⊓ (∀TEMPERATURE.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.10604023933410645}
+Target => (sequenceInterval ⊔ (complex ⊓ (∀KEQ.Thing)))
+{'Target': '(sequenceInterval ⊔ (complex ⊓ (∀KEQ.Thing)))', 'Prediction': 'complex', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 14, 'Runtime': 0.12604546546936035}
+Target => ((dna ⊓ (∃DELTA-H.Thing)) ⊔ (pathwayStep ⊓ (∀DB-VERSION.Thing)))
+{'Target': '((dna ⊓ (∃DELTA-H.Thing)) ⊔ (pathwayStep ⊓ (∀DB-VERSION.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.10727882385253906}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceParticipant ⊓ (∀RIGHT.Thing)))
+{'Target': '((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceParticipant ⊓ (∀RIGHT.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.11014890670776367}
+Target => ((pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)) ⊔ ((∀ID.Thing) ⊓ (evidence ⊓ (∀SEQUENCE-INTERVAL-END.Thing))))
+{'Target': '((pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)) ⊔ ((∀ID.Thing) ⊓ (evidence ⊓ (∀SEQUENCE-INTERVAL-END.Thing))))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.09026002883911133}
+Target => ((pathwayStep ⊓ (∀DELTA-G.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀CONFIDENCE.Thing)))
+{'Target': '((pathwayStep ⊓ (∀DELTA-G.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀CONFIDENCE.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.05873703956604004}
+Target => (pathwayStep ⊔ sequenceParticipant)
+{'Target': '(pathwayStep ⊔ sequenceParticipant)', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.0359041690826416}
+Target => ((complexAssembly ⊓ (∀TISSUE.Thing)) ⊔ (pathwayStep ⊓ (∀DELTA-G.Thing)))
+{'Target': '((complexAssembly ⊓ (∀TISSUE.Thing)) ⊔ (pathwayStep ⊓ (∀DELTA-G.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.03189730644226074}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceInterval ⊓ (∀ID-VERSION.Thing)))
+{'Target': '((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceInterval ⊓ (∀ID-VERSION.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.03133058547973633}
+Target => (conversion ⊓ physicalInteraction)
+{'Target': '(conversion ⊓ physicalInteraction)', 'Prediction': 'biochemicalReaction', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 3, 'Runtime': 0.03190422058105469}
+Target => (pathwayStep ⊔ (dna ⊓ (∀CONTROLLED.Thing)))
+{'Target': '(pathwayStep ⊔ (dna ⊓ (∀CONTROLLED.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.03135871887207031}
+Target => (pathwayStep ⊔ (evidence ⊓ (∀SEQUENCE-FEATURE-LIST.Thing)))
+{'Target': '(pathwayStep ⊔ (evidence ⊓ (∀SEQUENCE-FEATURE-LIST.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.06113791465759277}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀CONTROLLED.Thing)))
+{'Target': '(experimentalForm ⊔ (catalysis ⊓ (∀CONTROLLED.Thing)))', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.06863045692443848}
+Target => (pathwayStep ⊔ rna)
+{'Target': '(pathwayStep ⊔ rna)', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.11298894882202148}
+Target => ((∀EXPERIMENTAL-FORM.Thing) ⊓ (pathwayStep ⊓ (∀EC-NUMBER.Thing)))
+{'Target': '((∀EXPERIMENTAL-FORM.Thing) ⊓ (pathwayStep ⊓ (∀EC-NUMBER.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.08577513694763184}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceParticipant ⊓ (∀DELTA-G-PRIME-O.Thing)))
+{'Target': '((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceParticipant ⊓ (∀DELTA-G-PRIME-O.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.09914922714233398}
+Target => ((pathwayStep ⊓ (∀DELTA-G-PRIME-O.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀IONIC-STRENGTH.Thing)))
+{'Target': '((pathwayStep ⊓ (∀DELTA-G-PRIME-O.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀IONIC-STRENGTH.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.11804533004760742}
+Target => ((∀DELTA-H.Thing) ⊓ (complex ⊓ (∀STEP-INTERACTIONS.Thing)))
+{'Target': '((∀DELTA-H.Thing) ⊓ (complex ⊓ (∀STEP-INTERACTIONS.Thing)))', 'Prediction': 'complex', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 14, 'Runtime': 0.06418681144714355}
+Target => (complex ⊔ sequenceInterval)
+{'Target': '(complex ⊔ sequenceInterval)', 'Prediction': 'complex', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 14, 'Runtime': 0.15410971641540527}
+Target => (protein ⊓ (∀SEQUENCE-INTERVAL-BEGIN.Thing))
+{'Target': '(protein ⊓ (∀SEQUENCE-INTERVAL-BEGIN.Thing))', 'Prediction': 'protein', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 22, 'Runtime': 0.14518046379089355}
+Target => (sequenceInterval ⊔ (complex ⊓ (∀TITLE.Thing)))
+{'Target': '(sequenceInterval ⊔ (complex ⊓ (∀TITLE.Thing)))', 'Prediction': 'complex', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 14, 'Runtime': 0.13332796096801758}
+Target => ((dna ⊓ (∀CONTROLLED.Thing)) ⊔ (pathwayStep ⊓ (∀CELLULAR-LOCATION.Thing)))
+{'Target': '((dna ⊓ (∀CONTROLLED.Thing)) ⊔ (pathwayStep ⊓ (∀CELLULAR-LOCATION.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.07316708564758301}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀MOLECULAR-WEIGHT.Thing)))
+{'Target': '((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀MOLECULAR-WEIGHT.Thing)))', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.05771207809448242}
+Target => (transport ⊔ (pathwayStep ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Target': '(transport ⊔ (pathwayStep ⊓ (∀PATHWAY-COMPONENTS.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.05763363838195801}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DELTA-G-PRIME-O.Thing)))
+{'Target': '(transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DELTA-G-PRIME-O.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.044672250747680664}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀DELTA-H.Thing)))
+{'Target': '(experimentalForm ⊔ (catalysis ⊓ (∀DELTA-H.Thing)))', 'Prediction': 'physicalInteraction', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 11, 'Runtime': 0.046875953674316406}
+Target => (catalysis ⊓ physicalInteraction)
+{'Target': '(catalysis ⊓ physicalInteraction)', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.03720211982727051}
+Target => ((pathwayStep ⊓ (∀DB.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Target': '((pathwayStep ⊓ (∀DB.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀INTERACTION-TYPE.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.027692556381225586}
+Target => ((complex ⊓ (∀KEQ.Thing)) ⊔ (sequenceInterval ⊓ (∃CONTROLLER.Thing)))
+{'Target': '((complex ⊓ (∀KEQ.Thing)) ⊔ (sequenceInterval ⊓ (∃CONTROLLER.Thing)))', 'Prediction': 'complex', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 14, 'Runtime': 0.026875019073486328}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceInterval ⊓ (∀CONFIDENCE-VALUE.Thing)))
+{'Target': '((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceInterval ⊓ (∀CONFIDENCE-VALUE.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.026672840118408203}
+Target => (rna ⊔ (pathwayStep ⊓ (∀PARTICIPANT.Thing)))
+{'Target': '(rna ⊔ (pathwayStep ⊓ (∀PARTICIPANT.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.02608180046081543}
+Target => (sequenceInterval ⊔ (pathwayStep ⊓ (∀STRUCTURE-DATA.Thing)))
+{'Target': '(sequenceInterval ⊔ (pathwayStep ⊓ (∀STRUCTURE-DATA.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.026215791702270508}
+Target => (complex ⊓ (∀PMG.Thing))
+{'Target': '(complex ⊓ (∀PMG.Thing))', 'Prediction': 'complex', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 14, 'Runtime': 0.028233051300048828}
+Target => (catalysis ⊔ experimentalForm)
+{'Target': '(catalysis ⊔ experimentalForm)', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.034160614013671875}
+Target => ((evidence ⊓ (∀ID.Thing)) ⊔ (pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)))
+{'Target': '((evidence ⊓ (∀ID.Thing)) ⊔ (pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.03884768486022949}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀ORGANISM.Thing)))
+{'Target': '(transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀ORGANISM.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.0456693172454834}
+Target => ((pathwayStep ⊓ (∀DELTA-G.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀COFACTOR.Thing)))
+{'Target': '((pathwayStep ⊓ (∀DELTA-G.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀COFACTOR.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.03329634666442871}
+Target => ((∀PMG.Thing) ⊓ (complex ⊓ (∀TEMPERATURE.Thing)))
+{'Target': '((∀PMG.Thing) ⊓ (complex ⊓ (∀TEMPERATURE.Thing)))', 'Prediction': 'complex', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 14, 'Runtime': 0.03710365295410156}
+Target => (sequenceInterval ⊔ (pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Target': '(sequenceInterval ⊔ (pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.032032012939453125}
+Target => (transport ⊔ (pathwayStep ⊓ (∀ORGANISM.Thing)))
+{'Target': '(transport ⊔ (pathwayStep ⊓ (∀ORGANISM.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.036123037338256836}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DELTA-G.Thing)))
+{'Target': '(transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DELTA-G.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.03490304946899414}
+Target => (dna ⊔ pathwayStep)
+{'Target': '(dna ⊔ pathwayStep)', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.03465986251831055}
+Target => (pathwayStep ⊔ (complexAssembly ⊓ (∀TISSUE.Thing)))
+{'Target': '(pathwayStep ⊔ (complexAssembly ⊓ (∀TISSUE.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.032442331314086914}
+Target => (pathwayStep ⊔ transport)
+{'Target': '(pathwayStep ⊔ transport)', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.03548407554626465}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀SPONTANEOUS.Thing)))
+{'Target': '((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀SPONTANEOUS.Thing)))', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.032225608825683594}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀DB-VERSION.Thing)))
+{'Target': '((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀DB-VERSION.Thing)))', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.03148484230041504}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Target': '(transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀PATHWAY-COMPONENTS.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.027727603912353516}
+Target => ((complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)) ⊔ (pathwayStep ⊓ (∀LEFT.Thing)))
+{'Target': '((complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)) ⊔ (pathwayStep ⊓ (∀LEFT.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.027018070220947266}
+Target => ((∀EXPERIMENTAL-FORM-TYPE.Thing) ⊓ (relationshipXref ⊓ (∀STOICHIOMETRIC-COEFFICIENT.Thing)))
+{'Target': '((∀EXPERIMENTAL-FORM-TYPE.Thing) ⊓ (relationshipXref ⊓ (∀STOICHIOMETRIC-COEFFICIENT.Thing)))', 'Prediction': 'relationshipXref', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 19, 'Runtime': 0.0273129940032959}
+Target => (sequenceParticipant ⊔ (pathwayStep ⊓ (∀KEQ.Thing)))
+{'Target': '(sequenceParticipant ⊔ (pathwayStep ⊓ (∀KEQ.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.026201963424682617}
+Target => (pathwayStep ⊔ (complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Target': '(pathwayStep ⊔ (complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.026175260543823242}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.Thing) ⊓ (protein ⊓ (∀EC-NUMBER.Thing)))
+{'Target': '((∀SEQUENCE-INTERVAL-BEGIN.Thing) ⊓ (protein ⊓ (∀EC-NUMBER.Thing)))', 'Prediction': 'protein', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 22, 'Runtime': 0.026017427444458008}
+Target => ((pathwayStep ⊓ (∀DB.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀ID.Thing)))
+{'Target': '((pathwayStep ⊓ (∀DB.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀ID.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.02798151969909668}
+Target => (evidence ⊔ pathwayStep)
+{'Target': '(evidence ⊔ pathwayStep)', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.026384353637695312}
+Target => ((∀SOURCE.Thing) ⊓ (pathwayStep ⊓ (∀ID.Thing)))
+{'Target': '((∀SOURCE.Thing) ⊓ (pathwayStep ⊓ (∀ID.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.02616143226623535}
+Target => ((pathwayStep ⊓ (∀KEQ.Thing)) ⊔ (sequenceParticipant ⊓ (∀STRUCTURE.Thing)))
+{'Target': '((pathwayStep ⊓ (∀KEQ.Thing)) ⊔ (sequenceParticipant ⊓ (∀STRUCTURE.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.026407957077026367}
+Target => ((pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)) ⊔ ((∀ID.Thing) ⊓ (evidence ⊓ (∀TEMPERATURE.Thing))))
+{'Target': '((pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)) ⊔ ((∀ID.Thing) ⊓ (evidence ⊓ (∀TEMPERATURE.Thing))))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.027233362197875977}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.Thing) ⊓ (protein ⊓ (∀EVIDENCE.Thing)))
+{'Target': '((∀SEQUENCE-INTERVAL-BEGIN.Thing) ⊓ (protein ⊓ (∀EVIDENCE.Thing)))', 'Prediction': 'protein', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 22, 'Runtime': 0.026073694229125977}
+Target => (transport ⊔ (pathwayStep ⊓ (∀DB.Thing)))
+{'Target': '(transport ⊔ (pathwayStep ⊓ (∀DB.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.026437044143676758}
+Target => (pathwayStep ⊔ (dna ⊓ (∃DELTA-H.Thing)))
+{'Target': '(pathwayStep ⊔ (dna ⊓ (∃DELTA-H.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.026291847229003906}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀SHORT-NAME.Thing)))
+{'Target': '((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀SHORT-NAME.Thing)))', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.026826858520507812}
+Target => (rna ⊔ (pathwayStep ⊓ (∀SPONTANEOUS.Thing)))
+{'Target': '(rna ⊔ (pathwayStep ⊓ (∀SPONTANEOUS.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.02703857421875}
+Target => (pathway ⊔ pathwayStep)
+{'Target': '(pathway ⊔ pathwayStep)', 'Prediction': '(pathway ⊔ pathwayStep)', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 798, 'Runtime': 0.18909811973571777}
+Target => (complexAssembly ⊔ pathwayStep)
+{'Target': '(complexAssembly ⊔ pathwayStep)', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.024892568588256836}
+Target => (physicalInteraction ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Target': '(physicalInteraction ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.027778148651123047}
+Target => (pathwayStep ⊔ (pathway ⊓ (∀DATA-SOURCE.Thing)))
+{'Target': '(pathwayStep ⊔ (pathway ⊓ (∀DATA-SOURCE.Thing)))', 'Prediction': '(pathway ⊔ pathwayStep)', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 798, 'Runtime': 0.18283367156982422}
+Target => (pathwayStep ⊔ transportWithBiochemicalReaction)
+{'Target': '(pathwayStep ⊔ transportWithBiochemicalReaction)', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.024858951568603516}
+Target => (pathwayStep ⊔ (evidence ⊓ (∀ID.Thing)))
+{'Target': '(pathwayStep ⊔ (evidence ⊓ (∀ID.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.0265655517578125}
+Target => (relationshipXref ⊓ (∀SPONTANEOUS.Thing))
+{'Target': '(relationshipXref ⊓ (∀SPONTANEOUS.Thing))', 'Prediction': 'relationshipXref', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 19, 'Runtime': 0.02761387825012207}
+Target => (catalysis ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Target': '(catalysis ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))', 'Prediction': 'catalysis', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 12, 'Runtime': 0.027071237564086914}
+Target => ((pathwayStep ⊓ (∀PARTICIPANT.Thing)) ⊔ (rna ⊓ (∀STOICHIOMETRIC-COEFFICIENT.Thing)))
+{'Target': '((pathwayStep ⊓ (∀PARTICIPANT.Thing)) ⊔ (rna ⊓ (∀STOICHIOMETRIC-COEFFICIENT.Thing)))', 'Prediction': 'pathwayStep', 'F-measure': 1.0, 'Accuracy': 1.0, 'NumClassTested': 18, 'Runtime': 0.026556015014648438}
+##################
+ocel starts on 96 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => ((complex ⊓ (∀TITLE.Thing)) ⊔ (sequenceInterval ⊓ (∃SEQUENCE-INTERVAL-END.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 4682, 'Runtime': 7.577}
+Target => ((∀SPONTANEOUS.Thing) ⊓ (relationshipXref ⊓ (∀K-PRIME.Thing)))
+{'Prediction': 'relationshipXref', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 7756, 'Runtime': 7.013}
+Target => (pathwayStep ⊓ (∀EXPERIMENTAL-FORM.Thing))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 7.476}
+Target => ((∀SPONTANEOUS.Thing) ⊓ (relationshipXref ⊓ (∀LEFT.Thing)))
+{'Prediction': 'relationshipXref', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 7756, 'Runtime': 7.727}
+Target => ((pathwayStep ⊓ (∀SPONTANEOUS.Thing)) ⊔ (rna ⊓ (∀AVAILABILITY.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 3653, 'Runtime': 6.977}
+Target => ((∀SOURCE.Thing) ⊓ (pathwayStep ⊓ (∀FEATURE-TYPE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2017, 'Runtime': 6.974}
+Target => (complex ⊓ (∀DELTA-H.Thing))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 3893, 'Runtime': 8.388}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀SEQUENCE-INTERVAL-END.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1948, 'Runtime': 7.96}
+Target => (pathwayStep ⊔ sequenceInterval)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1932, 'Runtime': 9.795}
+Target => (control ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Prediction': 'control', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 6682, 'Runtime': 8.291}
+Target => (protein ⊓ (∀LEFT.Thing))
+{'Prediction': 'protein', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2299, 'Runtime': 6.855}
+Target => (pathwayStep ⊔ (pathway ⊓ (∀STRUCTURE-DATA.Thing)))
+{'Prediction': '(pathwayStep ⊔ (∃ PATHWAY-COMPONENTS.⊤)) ⊓ (¬unificationXref)', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1930, 'Runtime': 8.372}
+Target => (physicalInteraction ⊓ (catalysis ⊓ (∀LEFT.Thing)))
+{'Prediction': 'interaction', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 3391, 'Runtime': 7.141}
+Target => ((complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)) ⊔ (pathwayStep ⊓ (∀SPONTANEOUS.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1995, 'Runtime': 7.159}
+Target => (sequenceParticipant ⊔ (pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 4117, 'Runtime': 7.549}
+Target => ((∀PMG.Thing) ⊓ (complex ⊓ (∀STRUCTURE-FORMAT.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1229, 'Runtime': 7.991}
+Target => ((pathwayStep ⊓ (∀SPONTANEOUS.Thing)) ⊔ (rna ⊓ (∀PH.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 7.607}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀PARTICIPANTS.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2887, 'Runtime': 7.171}
+Target => ((catalysis ⊓ (∀CONTROLLED.Thing)) ⊔ (experimentalForm ⊓ (∀SEQUENCE-INTERVAL-BEGIN.Thing)))
+{'Prediction': 'control', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 12489, 'Runtime': 10.174}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DB.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 7.96}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.interaction) ⊓ (protein ⊓ (∀EVIDENCE.Thing)))
+{'Prediction': 'protein', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5000, 'Runtime': 7.666}
+Target => (relationshipXref ⊓ (∀EXPERIMENTAL-FORM-TYPE.Thing))
+{'Prediction': 'relationshipXref', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 7756, 'Runtime': 8.272}
+Target => ((complex ⊓ (∀TITLE.Thing)) ⊔ (sequenceInterval ⊓ (∃URL.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 4293, 'Runtime': 8.262}
+Target => (pathwayStep ⊓ (∀SOURCE.Thing))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 8.015}
+Target => ((pathwayStep ⊓ (∀ORGANISM.Thing)) ⊔ (transport ⊓ (∀ID-VERSION.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1948, 'Runtime': 7.813}
+Target => ((dna ⊓ (∃DELTA-H.Thing)) ⊔ (pathwayStep ⊓ (∀TEMPERATURE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1948, 'Runtime': 7.392}
+Target => (sequenceInterval ⊔ (complex ⊓ (∀KEQ.Thing)))
+{'Prediction': 'physicalEntity', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 12281, 'Runtime': 10.518}
+Target => ((dna ⊓ (∃DELTA-H.Thing)) ⊔ (pathwayStep ⊓ (∀DB-VERSION.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 8.405}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceParticipant ⊓ (∀RIGHT.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 7.614}
+Target => ((pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)) ⊔ ((∀ID.Thing) ⊓ (evidence ⊓ (∀SEQUENCE-INTERVAL-END.Thing))))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 7.221}
+Target => ((pathwayStep ⊓ (∀DELTA-G.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀CONFIDENCE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 6.909}
+Target => (pathwayStep ⊔ sequenceParticipant)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 7.047}
+Target => ((complexAssembly ⊓ (∀TISSUE.Thing)) ⊔ (pathwayStep ⊓ (∀DELTA-G.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 7.508}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceInterval ⊓ (∀ID-VERSION.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2291, 'Runtime': 7.565}
+Target => (conversion ⊓ physicalInteraction)
+{'Prediction': 'conversion', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2163, 'Runtime': 7.086}
+Target => (pathwayStep ⊔ (dna ⊓ (∀CONTROLLED.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1995, 'Runtime': 8.053}
+Target => (pathwayStep ⊔ (evidence ⊓ (∀SEQUENCE-FEATURE-LIST.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 7.707}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀CONTROLLED.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2262, 'Runtime': 7.884}
+Target => (pathwayStep ⊔ rna)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 7.587}
+Target => ((∀EXPERIMENTAL-FORM.Thing) ⊓ (pathwayStep ⊓ (∀EC-NUMBER.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2324, 'Runtime': 7.561}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceParticipant ⊓ (∀DELTA-G-PRIME-O.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1948, 'Runtime': 7.606}
+Target => ((pathwayStep ⊓ (∀DELTA-G-PRIME-O.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀IONIC-STRENGTH.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1947, 'Runtime': 8.377}
+Target => ((∀DELTA-H.Thing) ⊓ (complex ⊓ (∀STEP-INTERACTIONS.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2017, 'Runtime': 7.342}
+Target => (complex ⊔ sequenceInterval)
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 4657, 'Runtime': 7.232}
+Target => (protein ⊓ (∀SEQUENCE-INTERVAL-BEGIN.Thing))
+{'Prediction': 'protein', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 3567, 'Runtime': 7.444}
+Target => (sequenceInterval ⊔ (complex ⊓ (∀TITLE.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 4657, 'Runtime': 7.664}
+Target => ((dna ⊓ (∀CONTROLLED.Thing)) ⊔ (pathwayStep ⊓ (∀CELLULAR-LOCATION.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2371, 'Runtime': 7.451}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀MOLECULAR-WEIGHT.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1276, 'Runtime': 7.22}
+Target => (transport ⊔ (pathwayStep ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 6.9}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DELTA-G-PRIME-O.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2291, 'Runtime': 7.195}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀DELTA-H.Thing)))
+{'Prediction': 'interaction', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 11307, 'Runtime': 8.518}
+Target => (catalysis ⊓ physicalInteraction)
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 3943, 'Runtime': 7.078}
+Target => ((pathwayStep ⊓ (∀DB.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2291, 'Runtime': 7.375}
+Target => ((complex ⊓ (∀KEQ.Thing)) ⊔ (sequenceInterval ⊓ (∃CONTROLLER.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 4003, 'Runtime': 7.249}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceInterval ⊓ (∀CONFIDENCE-VALUE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2291, 'Runtime': 7.256}
+Target => (rna ⊔ (pathwayStep ⊓ (∀PARTICIPANT.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 7.068}
+Target => (sequenceInterval ⊔ (pathwayStep ⊓ (∀STRUCTURE-DATA.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 8.265}
+Target => (complex ⊓ (∀PMG.Thing))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 3893, 'Runtime': 6.89}
+Target => (catalysis ⊔ experimentalForm)
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 6431, 'Runtime': 8.013}
+Target => ((evidence ⊓ (∀ID.Thing)) ⊔ (pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 3117, 'Runtime': 7.241}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀ORGANISM.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2028, 'Runtime': 7.36}
+Target => ((pathwayStep ⊓ (∀DELTA-G.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀COFACTOR.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1947, 'Runtime': 9.054}
+Target => ((∀PMG.Thing) ⊓ (complex ⊓ (∀TEMPERATURE.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 3973, 'Runtime': 8.565}
+Target => (sequenceInterval ⊔ (pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 7.248}
+Target => (transport ⊔ (pathwayStep ⊓ (∀ORGANISM.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2313, 'Runtime': 6.995}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DELTA-G.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1995, 'Runtime': 8.086}
+Target => (dna ⊔ pathwayStep)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2291, 'Runtime': 7.013}
+Target => (pathwayStep ⊔ (complexAssembly ⊓ (∀TISSUE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2028, 'Runtime': 8.357}
+Target => (pathwayStep ⊔ transport)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 7.495}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀SPONTANEOUS.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 6431, 'Runtime': 8.043}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀DB-VERSION.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2306, 'Runtime': 7.576}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2028, 'Runtime': 8.415}
+Target => ((complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)) ⊔ (pathwayStep ⊓ (∀LEFT.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 7.625}
+Target => ((∀EXPERIMENTAL-FORM-TYPE.Thing) ⊓ (relationshipXref ⊓ (∀STOICHIOMETRIC-COEFFICIENT.Thing)))
+{'Prediction': 'relationshipXref', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 7756, 'Runtime': 8.001}
+Target => (sequenceParticipant ⊔ (pathwayStep ⊓ (∀KEQ.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 3203, 'Runtime': 7.096}
+Target => (pathwayStep ⊔ (complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1948, 'Runtime': 7.535}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.Thing) ⊓ (protein ⊓ (∀EC-NUMBER.Thing)))
+{'Prediction': 'physicalEntity', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 3450, 'Runtime': 7.595}
+Target => ((pathwayStep ⊓ (∀DB.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀ID.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 9.319}
+Target => (evidence ⊔ pathwayStep)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 8.132}
+Target => ((∀SOURCE.Thing) ⊓ (pathwayStep ⊓ (∀ID.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2324, 'Runtime': 6.91}
+Target => ((pathwayStep ⊓ (∀KEQ.Thing)) ⊔ (sequenceParticipant ⊓ (∀STRUCTURE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 7.147}
+Target => ((pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)) ⊔ ((∀ID.Thing) ⊓ (evidence ⊓ (∀TEMPERATURE.Thing))))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1995, 'Runtime': 8.02}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.Thing) ⊓ (protein ⊓ (∀EVIDENCE.Thing)))
+{'Prediction': 'protein', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2287, 'Runtime': 7.243}
+Target => (transport ⊔ (pathwayStep ⊓ (∀DB.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 8.038}
+Target => (pathwayStep ⊔ (dna ⊓ (∃DELTA-H.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 7.918}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀SHORT-NAME.Thing)))
+{'Prediction': 'control', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2743, 'Runtime': 7.131}
+Target => (rna ⊔ (pathwayStep ⊓ (∀SPONTANEOUS.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2862, 'Runtime': 8.472}
+Target => (pathway ⊔ pathwayStep)
+{'Prediction': '(¬chemicalStructure) ⊓ (¬control) ⊓ (¬physicalEntityParticipant) ⊓ (¬relationshipXref) ⊓ (¬smallMolecule) ⊓ (¬unificationXref)', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1389, 'Runtime': 7.598}
+Target => (complexAssembly ⊔ pathwayStep)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 7.404}
+Target => (physicalInteraction ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5888, 'Runtime': 7.282}
+Target => (pathwayStep ⊔ (pathway ⊓ (∀DATA-SOURCE.Thing)))
+{'Prediction': '(¬chemicalStructure) ⊓ (¬complex) ⊓ (¬physicalEntityParticipant) ⊓ (¬physicalInteraction) ⊓ (¬xref)', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1210, 'Runtime': 7.101}
+Target => (pathwayStep ⊔ transportWithBiochemicalReaction)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 5813, 'Runtime': 8.337}
+Target => (pathwayStep ⊔ (evidence ⊓ (∀ID.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2313, 'Runtime': 6.86}
+Target => (relationshipXref ⊓ (∀SPONTANEOUS.Thing))
+{'Prediction': 'relationshipXref', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 7756, 'Runtime': 8.372}
+Target => (catalysis ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 1249, 'Runtime': 7.196}
+Target => ((pathwayStep ⊓ (∀PARTICIPANT.Thing)) ⊔ (rna ⊓ (∀STOICHIOMETRIC-COEFFICIENT.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': -0.01, 'NumClassTested': 2324, 'Runtime': 7.207}
+##################
+celoe starts on 96 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => ((complex ⊓ (∀TITLE.Thing)) ⊔ (sequenceInterval ⊓ (∃SEQUENCE-INTERVAL-END.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 7, 'Runtime': 4.844}
+Target => ((∀SPONTANEOUS.Thing) ⊓ (relationshipXref ⊓ (∀K-PRIME.Thing)))
+{'Prediction': 'relationshipXref', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 20, 'Runtime': 4.476}
+Target => (pathwayStep ⊓ (∀EXPERIMENTAL-FORM.Thing))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.008}
+Target => ((∀SPONTANEOUS.Thing) ⊓ (relationshipXref ⊓ (∀LEFT.Thing)))
+{'Prediction': 'relationshipXref', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 20, 'Runtime': 3.916}
+Target => ((pathwayStep ⊓ (∀SPONTANEOUS.Thing)) ⊔ (rna ⊓ (∀AVAILABILITY.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 3.83}
+Target => ((∀SOURCE.Thing) ⊓ (pathwayStep ⊓ (∀FEATURE-TYPE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.04}
+Target => (complex ⊓ (∀DELTA-H.Thing))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 7, 'Runtime': 4.077}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀SEQUENCE-INTERVAL-END.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.246}
+Target => (pathwayStep ⊔ sequenceInterval)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.366}
+Target => (control ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Prediction': 'control', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 8, 'Runtime': 4.792}
+Target => (protein ⊓ (∀LEFT.Thing))
+{'Prediction': 'protein', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 9, 'Runtime': 4.499}
+Target => (pathwayStep ⊔ (pathway ⊓ (∀STRUCTURE-DATA.Thing)))
+{'Prediction': '(¬externalReferenceUtilityClass) ⊓ (¬protein)', 'Accuracy': 0.9, 'F-measure': 0.9091, 'NumClassTested': 1005, 'Runtime': 7.413}
+Target => (physicalInteraction ⊓ (catalysis ⊓ (∀LEFT.Thing)))
+{'Prediction': 'interaction', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 4, 'Runtime': 5.426}
+Target => ((complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)) ⊔ (pathwayStep ⊓ (∀SPONTANEOUS.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.784}
+Target => (sequenceParticipant ⊔ (pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.21}
+Target => ((∀PMG.Thing) ⊓ (complex ⊓ (∀STRUCTURE-FORMAT.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 7, 'Runtime': 4.587}
+Target => ((pathwayStep ⊓ (∀SPONTANEOUS.Thing)) ⊔ (rna ⊓ (∀PH.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.322}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀PARTICIPANTS.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 4.575}
+Target => ((catalysis ⊓ (∀CONTROLLED.Thing)) ⊔ (experimentalForm ⊓ (∀SEQUENCE-INTERVAL-BEGIN.Thing)))
+{'Prediction': 'control', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 8, 'Runtime': 3.88}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DB.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.186}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.interaction) ⊓ (protein ⊓ (∀EVIDENCE.Thing)))
+{'Prediction': 'protein', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 9, 'Runtime': 4.886}
+Target => (relationshipXref ⊓ (∀EXPERIMENTAL-FORM-TYPE.Thing))
+{'Prediction': 'relationshipXref', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 20, 'Runtime': 4.824}
+Target => ((complex ⊓ (∀TITLE.Thing)) ⊔ (sequenceInterval ⊓ (∃URL.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 7, 'Runtime': 4.181}
+Target => (pathwayStep ⊓ (∀SOURCE.Thing))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.404}
+Target => ((pathwayStep ⊓ (∀ORGANISM.Thing)) ⊔ (transport ⊓ (∀ID-VERSION.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.133}
+Target => ((dna ⊓ (∃DELTA-H.Thing)) ⊔ (pathwayStep ⊓ (∀TEMPERATURE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.715}
+Target => (sequenceInterval ⊔ (complex ⊓ (∀KEQ.Thing)))
+{'Prediction': 'physicalEntity', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 6, 'Runtime': 4.35}
+Target => ((dna ⊓ (∃DELTA-H.Thing)) ⊔ (pathwayStep ⊓ (∀DB-VERSION.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.563}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceParticipant ⊓ (∀RIGHT.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.088}
+Target => ((pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)) ⊔ ((∀ID.Thing) ⊓ (evidence ⊓ (∀SEQUENCE-INTERVAL-END.Thing))))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.178}
+Target => ((pathwayStep ⊓ (∀DELTA-G.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀CONFIDENCE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.443}
+Target => (pathwayStep ⊔ sequenceParticipant)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.335}
+Target => ((complexAssembly ⊓ (∀TISSUE.Thing)) ⊔ (pathwayStep ⊓ (∀DELTA-G.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.333}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceInterval ⊓ (∀ID-VERSION.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.038}
+Target => (conversion ⊓ physicalInteraction)
+{'Prediction': 'conversion', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 9, 'Runtime': 4.253}
+Target => (pathwayStep ⊔ (dna ⊓ (∀CONTROLLED.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.279}
+Target => (pathwayStep ⊔ (evidence ⊓ (∀SEQUENCE-FEATURE-LIST.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.96}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀CONTROLLED.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 4.425}
+Target => (pathwayStep ⊔ rna)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 3.996}
+Target => ((∀EXPERIMENTAL-FORM.Thing) ⊓ (pathwayStep ⊓ (∀EC-NUMBER.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.398}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceParticipant ⊓ (∀DELTA-G-PRIME-O.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.318}
+Target => ((pathwayStep ⊓ (∀DELTA-G-PRIME-O.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀IONIC-STRENGTH.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.2}
+Target => ((∀DELTA-H.Thing) ⊓ (complex ⊓ (∀STEP-INTERACTIONS.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 7, 'Runtime': 4.189}
+Target => (complex ⊔ sequenceInterval)
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 7, 'Runtime': 3.85}
+Target => (protein ⊓ (∀SEQUENCE-INTERVAL-BEGIN.Thing))
+{'Prediction': 'protein', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 9, 'Runtime': 4.019}
+Target => (sequenceInterval ⊔ (complex ⊓ (∀TITLE.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 7, 'Runtime': 3.964}
+Target => ((dna ⊓ (∀CONTROLLED.Thing)) ⊔ (pathwayStep ⊓ (∀CELLULAR-LOCATION.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 3.943}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀MOLECULAR-WEIGHT.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 4.471}
+Target => (transport ⊔ (pathwayStep ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.072}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DELTA-G-PRIME-O.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 6.825}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀DELTA-H.Thing)))
+{'Prediction': 'interaction', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 4, 'Runtime': 4.462}
+Target => (catalysis ⊓ physicalInteraction)
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 5.243}
+Target => ((pathwayStep ⊓ (∀DB.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.275}
+Target => ((complex ⊓ (∀KEQ.Thing)) ⊔ (sequenceInterval ⊓ (∃CONTROLLER.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 7, 'Runtime': 4.167}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceInterval ⊓ (∀CONFIDENCE-VALUE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.251}
+Target => (rna ⊔ (pathwayStep ⊓ (∀PARTICIPANT.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.368}
+Target => (sequenceInterval ⊔ (pathwayStep ⊓ (∀STRUCTURE-DATA.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.265}
+Target => (complex ⊓ (∀PMG.Thing))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 7, 'Runtime': 5.489}
+Target => (catalysis ⊔ experimentalForm)
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 5.361}
+Target => ((evidence ⊓ (∀ID.Thing)) ⊔ (pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.509}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀ORGANISM.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 5.349}
+Target => ((pathwayStep ⊓ (∀DELTA-G.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀COFACTOR.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.175}
+Target => ((∀PMG.Thing) ⊓ (complex ⊓ (∀TEMPERATURE.Thing)))
+{'Prediction': 'complex', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 7, 'Runtime': 4.147}
+Target => (sequenceInterval ⊔ (pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.025}
+Target => (transport ⊔ (pathwayStep ⊓ (∀ORGANISM.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.16}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DELTA-G.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.27}
+Target => (dna ⊔ pathwayStep)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.004}
+Target => (pathwayStep ⊔ (complexAssembly ⊓ (∀TISSUE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.01}
+Target => (pathwayStep ⊔ transport)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.251}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀SPONTANEOUS.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 5.104}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀DB-VERSION.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 4.62}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.062}
+Target => ((complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)) ⊔ (pathwayStep ⊓ (∀LEFT.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.819}
+Target => ((∀EXPERIMENTAL-FORM-TYPE.Thing) ⊓ (relationshipXref ⊓ (∀STOICHIOMETRIC-COEFFICIENT.Thing)))
+{'Prediction': 'relationshipXref', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 20, 'Runtime': 5.143}
+Target => (sequenceParticipant ⊔ (pathwayStep ⊓ (∀KEQ.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 3.959}
+Target => (pathwayStep ⊔ (complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.18}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.Thing) ⊓ (protein ⊓ (∀EC-NUMBER.Thing)))
+{'Prediction': 'physicalEntity', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 6, 'Runtime': 4.285}
+Target => ((pathwayStep ⊓ (∀DB.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀ID.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.422}
+Target => (evidence ⊔ pathwayStep)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.01}
+Target => ((∀SOURCE.Thing) ⊓ (pathwayStep ⊓ (∀ID.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.073}
+Target => ((pathwayStep ⊓ (∀KEQ.Thing)) ⊔ (sequenceParticipant ⊓ (∀STRUCTURE.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.373}
+Target => ((pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)) ⊔ ((∀ID.Thing) ⊓ (evidence ⊓ (∀TEMPERATURE.Thing))))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.345}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.Thing) ⊓ (protein ⊓ (∀EVIDENCE.Thing)))
+{'Prediction': 'protein', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 9, 'Runtime': 4.137}
+Target => (transport ⊔ (pathwayStep ⊓ (∀DB.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 3.831}
+Target => (pathwayStep ⊔ (dna ⊓ (∃DELTA-H.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.145}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀SHORT-NAME.Thing)))
+{'Prediction': 'control', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 8, 'Runtime': 4.152}
+Target => (rna ⊔ (pathwayStep ⊓ (∀SPONTANEOUS.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.299}
+Target => (pathway ⊔ pathwayStep)
+{'Prediction': '∀ XREF.⊥', 'Accuracy': 0.7000000000000001, 'F-measure': 0.7692, 'NumClassTested': 1251, 'Runtime': 7.234}
+Target => (complexAssembly ⊔ pathwayStep)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.065}
+Target => (physicalInteraction ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 4.16}
+Target => (pathwayStep ⊔ (pathway ⊓ (∀DATA-SOURCE.Thing)))
+{'Prediction': '(¬physicalInteraction) ⊓ (¬xref)', 'Accuracy': 0.85, 'F-measure': 0.8695999999999999, 'NumClassTested': 990, 'Runtime': 7.309}
+Target => (pathwayStep ⊔ transportWithBiochemicalReaction)
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.154}
+Target => (pathwayStep ⊔ (evidence ⊓ (∀ID.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.037}
+Target => (relationshipXref ⊓ (∀SPONTANEOUS.Thing))
+{'Prediction': 'relationshipXref', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 20, 'Runtime': 4.117}
+Target => (catalysis ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Prediction': 'catalysis', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 10, 'Runtime': 4.162}
+Target => ((pathwayStep ⊓ (∀PARTICIPANT.Thing)) ⊔ (rna ⊓ (∀STOICHIOMETRIC-COEFFICIENT.Thing)))
+{'Prediction': 'pathwayStep', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': 11, 'Runtime': 4.098}
+##################
+eltl starts on 96 number of problems. Max Runtime per problem is set to 3 seconds.
+###############
+Target => ((complex ⊓ (∀TITLE.Thing)) ⊔ (sequenceInterval ⊓ (∃SEQUENCE-INTERVAL-END.Thing)))
+{'Prediction': '∃ COMPONENTS.physicalEntityParticipant', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 5.155}
+Target => ((∀SPONTANEOUS.Thing) ⊓ (relationshipXref ⊓ (∀K-PRIME.Thing)))
+{'Prediction': '∃ RELATIONSHIP-TYPE.string', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.525}
+Target => (pathwayStep ⊓ (∀EXPERIMENTAL-FORM.Thing))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.133}
+Target => ((∀SPONTANEOUS.Thing) ⊓ (relationshipXref ⊓ (∀LEFT.Thing)))
+{'Prediction': '∃ RELATIONSHIP-TYPE.string', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.295}
+Target => ((pathwayStep ⊓ (∀SPONTANEOUS.Thing)) ⊔ (rna ⊓ (∀AVAILABILITY.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.181}
+Target => ((∀SOURCE.Thing) ⊓ (pathwayStep ⊓ (∀FEATURE-TYPE.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.283}
+Target => (complex ⊓ (∀DELTA-H.Thing))
+{'Prediction': '∃ COMPONENTS.physicalEntityParticipant', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.286}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀SEQUENCE-INTERVAL-END.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.342}
+Target => (pathwayStep ⊔ sequenceInterval)
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.224}
+Target => (control ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Prediction': '∃ CONTROL-TYPE.(({ACTIVATION} ⊔ {ACTIVATION-ALLOSTERIC} ⊔ {ACTIVATION-NONALLOSTERIC} ⊔ {INHIBITION} ⊔ {INHIBITION-ALLOSTERIC} ⊔ {INHIBITION-COMPETITIVE} ⊔ {INHIBITION-IRREVERSIBLE} ⊔ {INHIBITION-NONCOMPETITIVE} ⊔ {INHIBITION-OTHER} ⊔ {INHIBITION-UNCOMPETITIVE}))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.033}
+Target => (protein ⊓ (∀LEFT.Thing))
+{'Prediction': '∃ SEQUENCE.string', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.199}
+Target => (pathwayStep ⊔ (pathway ⊓ (∀STRUCTURE-DATA.Thing)))
+{'Prediction': '⊤', 'Accuracy': 0.5, 'F-measure': 0.6667000000000001, 'NumClassTested': -1, 'Runtime': 4.182}
+Target => (physicalInteraction ⊓ (catalysis ⊓ (∀LEFT.Thing)))
+{'Prediction': '∃ PARTICIPANTS.(⊤ ⊓ (entity ⊔ physicalEntityParticipant))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.127}
+Target => ((complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)) ⊔ (pathwayStep ⊓ (∀SPONTANEOUS.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.27}
+Target => (sequenceParticipant ⊔ (pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.934}
+Target => ((∀PMG.Thing) ⊓ (complex ⊓ (∀STRUCTURE-FORMAT.Thing)))
+{'Prediction': '∃ COMPONENTS.physicalEntityParticipant', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.899}
+Target => ((pathwayStep ⊓ (∀SPONTANEOUS.Thing)) ⊔ (rna ⊓ (∀PH.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.998}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀PARTICIPANTS.Thing)))
+{'Prediction': '∃ DIRECTION.(({IRREVERSIBLE-LEFT-TO-RIGHT} ⊔ {IRREVERSIBLE-RIGHT-TO-LEFT} ⊔ {PHYSIOL-LEFT-TO-RIGHT} ⊔ {PHYSIOL-RIGHT-TO-LEFT} ⊔ {REVERSIBLE}))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 5.126}
+Target => ((catalysis ⊓ (∀CONTROLLED.Thing)) ⊔ (experimentalForm ⊓ (∀SEQUENCE-INTERVAL-BEGIN.Thing)))
+{'Prediction': '∃ CONTROL-TYPE.(({ACTIVATION} ⊔ {ACTIVATION-ALLOSTERIC} ⊔ {ACTIVATION-NONALLOSTERIC} ⊔ {INHIBITION} ⊔ {INHIBITION-ALLOSTERIC} ⊔ {INHIBITION-COMPETITIVE} ⊔ {INHIBITION-IRREVERSIBLE} ⊔ {INHIBITION-NONCOMPETITIVE} ⊔ {INHIBITION-OTHER} ⊔ {INHIBITION-UNCOMPETITIVE}))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 5.208}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DB.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.513}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.interaction) ⊓ (protein ⊓ (∀EVIDENCE.Thing)))
+{'Prediction': '∃ ORGANISM.bioSource', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.032}
+Target => (relationshipXref ⊓ (∀EXPERIMENTAL-FORM-TYPE.Thing))
+{'Prediction': '∃ RELATIONSHIP-TYPE.string', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.991}
+Target => ((complex ⊓ (∀TITLE.Thing)) ⊔ (sequenceInterval ⊓ (∃URL.Thing)))
+{'Prediction': '∃ COMPONENTS.physicalEntityParticipant', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.982}
+Target => (pathwayStep ⊓ (∀SOURCE.Thing))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.151}
+Target => ((pathwayStep ⊓ (∀ORGANISM.Thing)) ⊔ (transport ⊓ (∀ID-VERSION.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.978}
+Target => ((dna ⊓ (∃DELTA-H.Thing)) ⊔ (pathwayStep ⊓ (∀TEMPERATURE.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.086}
+Target => (sequenceInterval ⊔ (complex ⊓ (∀KEQ.Thing)))
+{'Prediction': '∃ COMPONENTS.physicalEntityParticipant', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.61}
+Target => ((dna ⊓ (∃DELTA-H.Thing)) ⊔ (pathwayStep ⊓ (∀DB-VERSION.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.129}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceParticipant ⊓ (∀RIGHT.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.36}
+Target => ((pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)) ⊔ ((∀ID.Thing) ⊓ (evidence ⊓ (∀SEQUENCE-INTERVAL-END.Thing))))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.995}
+Target => ((pathwayStep ⊓ (∀DELTA-G.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀CONFIDENCE.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.813}
+Target => (pathwayStep ⊔ sequenceParticipant)
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.38}
+Target => ((complexAssembly ⊓ (∀TISSUE.Thing)) ⊔ (pathwayStep ⊓ (∀DELTA-G.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.327}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceInterval ⊓ (∀ID-VERSION.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.996}
+Target => (conversion ⊓ physicalInteraction)
+{'Prediction': '∃ EC-NUMBER.string', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.896}
+Target => (pathwayStep ⊔ (dna ⊓ (∀CONTROLLED.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.918}
+Target => (pathwayStep ⊔ (evidence ⊓ (∀SEQUENCE-FEATURE-LIST.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.807}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀CONTROLLED.Thing)))
+{'Prediction': '∃ DIRECTION.(({IRREVERSIBLE-LEFT-TO-RIGHT} ⊔ {IRREVERSIBLE-RIGHT-TO-LEFT} ⊔ {PHYSIOL-LEFT-TO-RIGHT} ⊔ {PHYSIOL-RIGHT-TO-LEFT} ⊔ {REVERSIBLE}))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.962}
+Target => (pathwayStep ⊔ rna)
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.497}
+Target => ((∀EXPERIMENTAL-FORM.Thing) ⊓ (pathwayStep ⊓ (∀EC-NUMBER.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.784}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceParticipant ⊓ (∀DELTA-G-PRIME-O.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.966}
+Target => ((pathwayStep ⊓ (∀DELTA-G-PRIME-O.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀IONIC-STRENGTH.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.615}
+Target => ((∀DELTA-H.Thing) ⊓ (complex ⊓ (∀STEP-INTERACTIONS.Thing)))
+{'Prediction': '∃ COMPONENTS.physicalEntityParticipant', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.654}
+Target => (complex ⊔ sequenceInterval)
+{'Prediction': '∃ COMPONENTS.physicalEntityParticipant', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.212}
+Target => (protein ⊓ (∀SEQUENCE-INTERVAL-BEGIN.Thing))
+{'Prediction': '∃ SEQUENCE.string', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.551}
+Target => (sequenceInterval ⊔ (complex ⊓ (∀TITLE.Thing)))
+{'Prediction': '∃ COMPONENTS.physicalEntityParticipant', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.928}
+Target => ((dna ⊓ (∀CONTROLLED.Thing)) ⊔ (pathwayStep ⊓ (∀CELLULAR-LOCATION.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.96}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀MOLECULAR-WEIGHT.Thing)))
+{'Prediction': '∃ DIRECTION.(({IRREVERSIBLE-LEFT-TO-RIGHT} ⊔ {IRREVERSIBLE-RIGHT-TO-LEFT} ⊔ {PHYSIOL-LEFT-TO-RIGHT} ⊔ {PHYSIOL-RIGHT-TO-LEFT} ⊔ {REVERSIBLE}))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.005}
+Target => (transport ⊔ (pathwayStep ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.12}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DELTA-G-PRIME-O.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.56}
+Target => (experimentalForm ⊔ (catalysis ⊓ (∀DELTA-H.Thing)))
+{'Prediction': '∃ PARTICIPANTS.(⊤ ⊓ (entity ⊔ physicalEntityParticipant))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 5.498}
+Target => (catalysis ⊓ physicalInteraction)
+{'Prediction': '∃ DIRECTION.(({IRREVERSIBLE-LEFT-TO-RIGHT} ⊔ {IRREVERSIBLE-RIGHT-TO-LEFT} ⊔ {PHYSIOL-LEFT-TO-RIGHT} ⊔ {PHYSIOL-RIGHT-TO-LEFT} ⊔ {REVERSIBLE}))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.28}
+Target => ((pathwayStep ⊓ (∀DB.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.007}
+Target => ((complex ⊓ (∀KEQ.Thing)) ⊔ (sequenceInterval ⊓ (∃CONTROLLER.Thing)))
+{'Prediction': '∃ COMPONENTS.physicalEntityParticipant', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.69}
+Target => ((pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)) ⊔ (sequenceInterval ⊓ (∀CONFIDENCE-VALUE.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.166}
+Target => (rna ⊔ (pathwayStep ⊓ (∀PARTICIPANT.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.032}
+Target => (sequenceInterval ⊔ (pathwayStep ⊓ (∀STRUCTURE-DATA.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.248}
+Target => (complex ⊓ (∀PMG.Thing))
+{'Prediction': '∃ COMPONENTS.physicalEntityParticipant', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.162}
+Target => (catalysis ⊔ experimentalForm)
+{'Prediction': '∃ COMMENT.string', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.041}
+Target => ((evidence ⊓ (∀ID.Thing)) ⊔ (pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.468}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀ORGANISM.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.794}
+Target => ((pathwayStep ⊓ (∀DELTA-G.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀COFACTOR.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 5.079}
+Target => ((∀PMG.Thing) ⊓ (complex ⊓ (∀TEMPERATURE.Thing)))
+{'Prediction': '∃ COMPONENTS.physicalEntityParticipant', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.243}
+Target => (sequenceInterval ⊔ (pathwayStep ⊓ (∀INTERACTION-TYPE.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.341}
+Target => (transport ⊔ (pathwayStep ⊓ (∀ORGANISM.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.879}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀DELTA-G.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 5.571}
+Target => (dna ⊔ pathwayStep)
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 6.033}
+Target => (pathwayStep ⊔ (complexAssembly ⊓ (∀TISSUE.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 5.066}
+Target => (pathwayStep ⊔ transport)
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.457}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀SPONTANEOUS.Thing)))
+{'Prediction': '∃ DIRECTION.(({IRREVERSIBLE-LEFT-TO-RIGHT} ⊔ {IRREVERSIBLE-RIGHT-TO-LEFT} ⊔ {PHYSIOL-LEFT-TO-RIGHT} ⊔ {PHYSIOL-RIGHT-TO-LEFT} ⊔ {REVERSIBLE}))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.49}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀DB-VERSION.Thing)))
+{'Prediction': '∃ DIRECTION.(({IRREVERSIBLE-LEFT-TO-RIGHT} ⊔ {IRREVERSIBLE-RIGHT-TO-LEFT} ⊔ {PHYSIOL-LEFT-TO-RIGHT} ⊔ {PHYSIOL-RIGHT-TO-LEFT} ⊔ {REVERSIBLE}))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.583}
+Target => (transportWithBiochemicalReaction ⊔ (pathwayStep ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.596}
+Target => ((complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)) ⊔ (pathwayStep ⊓ (∀LEFT.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.901}
+Target => ((∀EXPERIMENTAL-FORM-TYPE.Thing) ⊓ (relationshipXref ⊓ (∀STOICHIOMETRIC-COEFFICIENT.Thing)))
+{'Prediction': '∃ RELATIONSHIP-TYPE.string', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.28}
+Target => (sequenceParticipant ⊔ (pathwayStep ⊓ (∀KEQ.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.325}
+Target => (pathwayStep ⊔ (complexAssembly ⊓ (∀PATHWAY-COMPONENTS.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.131}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.Thing) ⊓ (protein ⊓ (∀EC-NUMBER.Thing)))
+{'Prediction': '∃ ORGANISM.bioSource', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.618}
+Target => ((pathwayStep ⊓ (∀DB.Thing)) ⊔ (transportWithBiochemicalReaction ⊓ (∀ID.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.3}
+Target => (evidence ⊔ pathwayStep)
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.109}
+Target => ((∀SOURCE.Thing) ⊓ (pathwayStep ⊓ (∀ID.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.098}
+Target => ((pathwayStep ⊓ (∀KEQ.Thing)) ⊔ (sequenceParticipant ⊓ (∀STRUCTURE.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 3.831}
+Target => ((pathwayStep ⊓ (∀IONIC-STRENGTH.Thing)) ⊔ ((∀ID.Thing) ⊓ (evidence ⊓ (∀TEMPERATURE.Thing))))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 5.135}
+Target => ((∀SEQUENCE-INTERVAL-BEGIN.Thing) ⊓ (protein ⊓ (∀EVIDENCE.Thing)))
+{'Prediction': '∃ ORGANISM.bioSource', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.637}
+Target => (transport ⊔ (pathwayStep ⊓ (∀DB.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.347}
+Target => (pathwayStep ⊔ (dna ⊓ (∃DELTA-H.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.117}
+Target => ((catalysis ⊓ (∀DELTA-H.Thing)) ⊔ (experimentalForm ⊓ (∀SHORT-NAME.Thing)))
+{'Prediction': '∃ CONTROL-TYPE.(({ACTIVATION} ⊔ {ACTIVATION-ALLOSTERIC} ⊔ {ACTIVATION-NONALLOSTERIC} ⊔ {INHIBITION} ⊔ {INHIBITION-ALLOSTERIC} ⊔ {INHIBITION-COMPETITIVE} ⊔ {INHIBITION-IRREVERSIBLE} ⊔ {INHIBITION-NONCOMPETITIVE} ⊔ {INHIBITION-OTHER} ⊔ {INHIBITION-UNCOMPETITIVE}))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.357}
+Target => (rna ⊔ (pathwayStep ⊓ (∀SPONTANEOUS.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 5.115}
+Target => (pathway ⊔ pathwayStep)
+{'Prediction': '⊤', 'Accuracy': 0.5, 'F-measure': 0.6667000000000001, 'NumClassTested': -1, 'Runtime': 4.534}
+Target => (complexAssembly ⊔ pathwayStep)
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.132}
+Target => (physicalInteraction ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Prediction': '∃ DIRECTION.(({IRREVERSIBLE-LEFT-TO-RIGHT} ⊔ {IRREVERSIBLE-RIGHT-TO-LEFT} ⊔ {PHYSIOL-LEFT-TO-RIGHT} ⊔ {PHYSIOL-RIGHT-TO-LEFT} ⊔ {REVERSIBLE}))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.166}
+Target => (pathwayStep ⊔ (pathway ⊓ (∀DATA-SOURCE.Thing)))
+{'Prediction': '⊤', 'Accuracy': 0.5, 'F-measure': 0.6667000000000001, 'NumClassTested': -1, 'Runtime': 4.212}
+Target => (pathwayStep ⊔ transportWithBiochemicalReaction)
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.294}
+Target => (pathwayStep ⊔ (evidence ⊓ (∀ID.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.415}
+Target => (relationshipXref ⊓ (∀SPONTANEOUS.Thing))
+{'Prediction': '∃ RELATIONSHIP-TYPE.string', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 5.04}
+Target => (catalysis ⊓ (catalysis ⊓ (∀K-PRIME.Thing)))
+{'Prediction': '∃ DIRECTION.(({IRREVERSIBLE-LEFT-TO-RIGHT} ⊔ {IRREVERSIBLE-RIGHT-TO-LEFT} ⊔ {PHYSIOL-LEFT-TO-RIGHT} ⊔ {PHYSIOL-RIGHT-TO-LEFT} ⊔ {REVERSIBLE}))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.445}
+Target => ((pathwayStep ⊓ (∀PARTICIPANT.Thing)) ⊔ (rna ⊓ (∀STOICHIOMETRIC-COEFFICIENT.Thing)))
+{'Prediction': '∃ STEP-INTERACTIONS.(entity ⊓ (interaction ⊔ pathway))', 'Accuracy': 1.0, 'F-measure': 1.0, 'NumClassTested': -1, 'Runtime': 4.077}
+##################
+
+##### RESULTS on 96 number of learning problems#####
+DrillAverage     F-measure:(avg. 1.00 | std. 0.00)      Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. 41.12 | std. 135.97)               Runtime:(avg.0.06 | std.0.05)
+ocel     F-measure:(avg. -0.01 | std. 0.00)     Accuracy:(avg. 1.00 | std. 0.00)                NumClassTested:(avg. 3831.51 | std. 2307.24)            Runtime:(avg.7.70 | std.0.69)
+celoe    F-measure:(avg. 1.00 | std. 0.03)      Accuracy:(avg. 0.99 | std. 0.04)                NumClassTested:(avg. 43.98 | std. 187.65)               Runtime:(avg.4.59 | std.0.73)
+eltl     F-measure:(avg. 0.99 | std. 0.06)      Accuracy:(avg. 0.98 | std. 0.09)                NumClassTested:(avg. -1.00 | std. 0.00)         Runtime:(avg.4.37 | std.0.43)
+(drill_env) demir@demir:~/Desktop/DRILLESWC$

@@ -1,0 +1,66 @@
+Start Testing on Family on learning problems obtained from DL-learner
+##########
+Knowledge Base: family-benchmark_rich_background
+Number of concepts: 20
+Number of individuals: 202
+Number of properties: 4
+Number of data properties: 0
+Number of object properties: 4
+##########
+Number of problems 18 on Knowledge Base:family-benchmark_rich_background
+DRILL is loaded.
+Number of parameters:  1282785
+KG preprocessing took : 0.1634507179260254
+
+...
+
+##### RESULTS on 18 number of learning problems#####
+DrillAverage     F-measure:(avg. 0.96 | std. 0.08)      Accuracy:(avg. 0.95 | std. 0.10)                NumClassTested:(avg. 2052.00 | std. 3000.24)            Runtime:(avg.1.12 | std.1.51)
+ocel     F-measure:(avg. -0.01 | std. 0.00)     Accuracy:(avg. 0.94 | std. 0.23)                NumClassTested:(avg. 2563.67 | std. 796.21)             Runtime:(avg.6.40 | std.0.43)
+celoe    F-measure:(avg. 0.97 | std. 0.06)      Accuracy:(avg. 0.97 | std. 0.08)                NumClassTested:(avg. 584.78 | std. 1225.01)             Runtime:(avg.4.03 | std.1.03)
+eltl     F-measure:(avg. 0.96 | std. 0.09)      Accuracy:(avg. 0.95 | std. 0.13)                NumClassTested:(avg. -1.00 | std. 0.00)         Runtime:(avg.3.55 | std.0.54)
+
+...
+
+Start Testing on Carcinogenesis on learning problems obtained from DL-learner
+##########
+Knowledge Base: carcinogenesis
+Number of concepts: 144
+Number of individuals: 22372
+Number of properties: 19
+Number of data properties: 15
+Number of object properties: 4
+##########
+Number of problems 1 on Knowledge Base:carcinogenesis
+DRILL is loaded.
+Number of parameters:  321985
+KG preprocessing took : 2.114074230194092
+
+...
+
+##### RESULTS on 1 number of learning problems#####
+DrillAverage     F-measure:(avg. 0.71 | std. 0.00)      Accuracy:(avg. 0.56 | std. 0.00)                NumClassTested:(avg. 305.00 | std. 0.00)                Runtime:(avg.4.78 | std.0.00)
+ocel     F-measure:(avg. -0.01 | std. 0.00)     Accuracy:(avg. -0.01 | std. 0.00)               NumClassTested:(avg. 802.00 | std. 0.00)                Runtime:(avg.19.96 | std.0.00)
+celoe    F-measure:(avg. 0.71 | std. 0.00)      Accuracy:(avg. 0.56 | std. 0.00)                NumClassTested:(avg. 230.00 | std. 0.00)                Runtime:(avg.29.08 | std.0.00)
+eltl     F-measure:(avg. 0.72 | std. 0.00)      Accuracy:(avg. 0.57 | std. 0.00)                NumClassTested:(avg. -1.00 | std. 0.00)         Runtime:(avg.19.06 | std.0.00)
+...
+
+Start Testing on Mutagenesis on learning problems obtained from DL-learner
+##########
+Knowledge Base: mutagenesis
+Number of concepts: 88
+Number of individuals: 14145
+Number of properties: 11
+Number of data properties: 6
+Number of object properties: 5
+##########
+Number of problems 1 on Knowledge Base:mutagenesis
+DRILL is loaded.
+Number of parameters:  1282785
+KG preprocessing took : 1.6256914138793945
+
+##### RESULTS on 1 number of learning problems#####
+DrillAverage     F-measure:(avg. 0.70 | std. 0.00)      Accuracy:(avg. 0.54 | std. 0.00)                NumClassTested:(avg. 3943.00 | std. 0.00)               Runtime:(avg.3.04 | std.0.00)
+ocel     F-measure:(avg. -0.01 | std. 0.00)     Accuracy:(avg. -0.01 | std. 0.00)               NumClassTested:(avg. 4023.00 | std. 0.00)               Runtime:(avg.13.79 | std.0.00)
+celoe    F-measure:(avg. 0.70 | std. 0.00)      Accuracy:(avg. 0.54 | std. 0.00)                NumClassTested:(avg. 135.00 | std. 0.00)                Runtime:(avg.13.90 | std.0.00)
+eltl     F-measure:(avg. 0.70 | std. 0.00)      Accuracy:(avg. 0.54 | std. 0.00)                NumClassTested:(avg. -1.00 | std. 0.00)         Runtime:(avg.13.65 | std.0.00)
